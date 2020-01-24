@@ -221,6 +221,7 @@ def player_with_most_of(statistic)
       end
     end
   end
+end
 #
 #   player_name
 # end
