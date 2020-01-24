@@ -221,10 +221,8 @@ def player_with_most_of(statistic)
       end
     end
   end
+  player_name
 end
-#
-#   player_name
-# end
 #
 # def most_points_scored
 #   player_with_most_of(:points)
