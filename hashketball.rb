@@ -190,19 +190,19 @@ def big_shoe_rebounds
   num_rebounds
 end
 
-# # # Bonus Questions
-#
-# # # Since there are multiple bonus questions that ask me
-# # # to return the name of a player with the most of some stat, I can use the following methods
-# # # to DRY (don't repeat yourself) up my code.
-#
-# def iterate_through_players_for(name, statistic)
-#   game_hash.each do |_team, game_data|
-#     game_data[:players].each do |player|
-#       return player[statistic] if player[:player_name] == name
-#     end
-#   end
-# end
+# # Bonus Questions
+
+# # Since there are multiple bonus questions that ask me
+# # to return the name of a player with the most of some stat, I can use the following methods
+# # to DRY (don't repeat yourself) up my code.
+
+def iterate_through_players_for(name, statistic)
+  game_hash.each do |_team, game_data|
+    game_data[:players].each do |player|
+      return player[statistic] if player[:player_name] == name
+    end
+  end
+end
 #
 # def player_with_most_of(statistic)
 #   player_name = nil
